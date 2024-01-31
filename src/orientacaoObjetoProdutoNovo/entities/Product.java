@@ -6,10 +6,20 @@ public class Product {
     public double price;
     public int quantity;
 
+    public Product() { // implementação do construtor padrão
+
+    }
+
     public Product (String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public Product (String name, double price) {
+        this.name = name;
+        this.price = price;
+//      this.quantity = 0; não é obrigatório, pois o Java inicializa por padrão com zero a variável int
     }
 
     public double totalValueInStock() {
